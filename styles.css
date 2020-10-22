@@ -1,3 +1,111 @@
-Body{
-    background-image:url("index.jfif") ;
-    background-size: cover ;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-image: url(img/background.jpg);
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 480px){
+    body{
+        background-image: url(img/background-tel.jpg);
+    }
+}
+    
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(img/background-tel.jpg);
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(img/background.jpg);
+   }
+}
+
+.nav-header-main{
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:black ;
+    border-radius: 20px;
+}
+
+.header-login{
+    padding:20% 40px 25px 40px;
+    margin: 0 auto;
+}
+
+.button-inlogpage{
+    height: 30px;
+    width: 70px;
+}
+
+.input-inlogpage{
+    margin-bottom: 10px;
+    height: 30px;
+    width:200px ;
+}
+
+.p-inlogpage{
+    color: white;
+}
+
+.p-error{
+    background: #A94442;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin:20px auto ;
+}
+
+.h1-signuppage{
+    color: white;
+}
+
+.button-signup{
+    height: 30px;
+    width: 70px;
+    margin-left: 150px;
+    transform: -20%;
+}
+
+.flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.signuperror{
+    color: white;
+    background-color: tomato;
+}
