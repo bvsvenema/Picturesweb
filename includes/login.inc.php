@@ -1,7 +1,6 @@
 <?php
 
 if(isset($_POST['login-submit'])){
-
     require 'dbh.inc.php';
 
     $mailuid = $_POST['mailuid'];
@@ -29,6 +28,7 @@ if(isset($_POST['login-submit'])){
                  session_start();
                  $_SESSION['userId'] = $row['idUsers'];
                  $_SESSION['userUid'] = $row['uidUsers'];
+                 $_SESSION['Admin'] = $row['Admin'];
 
                  header("Location: ../mainpage.php?login=Success");
                 exit();

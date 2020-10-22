@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['Admin']) == 1){
+        if(isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){
 ?>
     <main>
 
@@ -36,7 +36,7 @@
                     <div class="flex">
                     <button class="button-inlogpage" type="submit" name="signup-submit">Signup</button>
                 </form>
-                <form action="index.php" method="post">
+                <form action="mainpage.php" method="post">
                     <button class="button-inlogpage" type="submit" name="index-submit">Back</button>
                 </form>
                 </div>
@@ -46,8 +46,13 @@
 
 <?php
     }else{
-        header("Location: ./index.php");
-        exit();
+        if ((!isset($_SESSION['userUid']) && $_SESSION['userUid'] != '')){
+            header("Location: ./mainpage.php");
+            exit();
+        }else{
+            header("Location: ./index.php");  
+            exit();
+        }
     }
     require "footer.php"
     //1:12:44

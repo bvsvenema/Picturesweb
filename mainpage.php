@@ -1,7 +1,7 @@
-
 <?php
 session_start();
-$_SESSION['Admin'] = 1;
+    //if(isset($_POST['login-submit'])){
+    //if (isset($_SESSION['userId']) && $_SESSION['userId'] == true){
 ?>
 
 <!DOCTYPE html>
@@ -14,29 +14,28 @@ $_SESSION['Admin'] = 1;
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-
-        <h1>You are in </h1>
     </body>
 
     <header>
         <nav>
-            <div>
-                <ul>
-                    <li><a href="mainpage.php">Home</a></li>
-                    <li><a href="#">Upload</a></li>
-                </ul>
+            <div class="Menu">
+                <ul class="ul-mainpage">
+                    <li class="li-mainpage"><a href="mainpage.php">Home</a></li>
+                    <li class="li-mainpage"><a href="#">Upload</a></li>
+                    
                 <form action="includes/logout.inc.php">
-                <button type="submit" name="logout-submit">Logout</button>
+                <button class="button-menubar" type="submit" name="logout-submit">Logout</button>
                 </form>
                 <?php
                    if(isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){
                         echo '<form action="signup.php">
-                    <button type="submit" name="signup-submit">signup</button>
+                    <button class="button-menubar" type="submit" name="signup-submit">Signup</button>
                 </form>';
-                    }
+                   }
                 ?>
-                
+                </ul>
 
             </div>
         </nav>
     </header>
+
