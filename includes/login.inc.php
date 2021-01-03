@@ -30,7 +30,7 @@ if(isset($_POST['login-submit'])){
                  $_SESSION['userUid'] = $row['uidUsers'];
                  $_SESSION['Admin'] = $row['Admin'];
 
-                 header("Location: ../mainpage.php?login=Success");
+                 header("Location: ../mainpage-main.php?login=Success");
                 exit();
             } else {
                 header("Location: ../index.php?error=wrongpwd");

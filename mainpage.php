@@ -9,7 +9,7 @@ session_start();
     <head>
         <meta charset="utf-8">
         <meta name="Description" content="this is example of a meta discription. this will often show up in search result">
-        <meta name="Vieuwport" content="widht=device-width, inital-scale=1">
+        <meta name="Viewport" content="width=device-width, initial-scale=1">
         <title>Picture website</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
@@ -20,8 +20,8 @@ session_start();
         <nav>
             <div class="Menu">
                 <ul class="ul-mainpage">
-                    <li class="li-mainpage"><a href="mainpage.php">Home</a></li>
-                    <li class="li-mainpage"><a href="#">Upload</a></li>
+                    <li class="li-mainpage"><a href="mainpage-main.php">Home</a></li>
+                    <li class="li-mainpage"><a href="album-mainpage.php">Folders</a></li>
                     
                 <form action="includes/logout.inc.php">
                 <button class="button-menubar" type="submit" name="logout-submit">Logout</button>
@@ -34,8 +34,8 @@ session_start();
                    }
                 ?>
                 </ul>
-
+                   
             </div>
-        </nav>
+        
     </header>
 

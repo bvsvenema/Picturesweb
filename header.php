@@ -3,11 +3,11 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="nederlands">
     <head>
         <meta charset="utf-8">
-        <meta name="Description" content="this is example of a meta discription. this will often show up in search result">
-        <meta name="Vieuwport" content="widht=device-width, inital-scale=1">
+        <meta name="Description" content="this is example of a meta description. this will often show up in search result">
+        <meta name="Viewport" content="width=device-width, initial-scale=1">
         <title>Picture website</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
@@ -39,7 +39,11 @@
                     </form>  
                     </div>
                     <p class="p-inlogpage">if you cant login. You cant!<br> ask the owner</p>
-                
+
             </div>
         </nav>
+
+        <div class="copyright">
+            <p>&copy;2020 Bvsvenema</p>
+        </div>
     </header>

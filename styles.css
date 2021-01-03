@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/*login page */
 body{
     background-image: url(img/background.jpg);
     max-width: 100%;
@@ -26,24 +26,7 @@ body{
     background-size: cover;
     opacity: 1;
     background-repeat: no-repeat;
-}
-
-@media(max-width: 480px){
-    body{
-        background-image: url(img/background-tel.jpg);
-    }
-}
-    
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-image: url(img/background-tel.jpg);
-    }
-}
-
-@media (min-width: 1025px) {
-    body {
-	    background-image: url(img/background.jpg);
-   }
+    background-attachment: fixed;
 }
 
 .nav-header-main{
@@ -58,8 +41,30 @@ body{
 }
 
 .header-login{
-    padding:20% 40px 25px 40px;
+    padding:30px 40px 25px 40px;
     margin: 0 auto;
+}
+
+@media(max-width: 480px){
+    body{
+        background-image: url(img/background-tel.jpg);
+        zoom: 150%;
+        -moz-transform: scale(1.5);
+    }
+}
+    
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(img/background-tel.jpg);
+        zoom: 150%;
+        -moz-transform: scale(1.5);
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(img/background.jpg);
+   }
 }
 
 .button-inlogpage{
@@ -96,6 +101,50 @@ body{
     margin-left: 150px;
     transform: -20%;
 }
+/*mainpage*/
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .flex{
     display: -webkit-box;
@@ -155,4 +204,147 @@ body{
 
 .button-menubar:hover{
     background-color: #111;
+}
+
+.copyright{
+    margin-left: 10px;
+    color: white;
+    float:left ;
+    position: absolute;
+    bottom: 10px;
+}
+
+.gallery-title{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+
+.wrapper{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 10px;
+    transform: translate(-50%)
+}
+
+.gallery-links{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.gallery-container a{
+    color: black;
+    text-decoration: none;
+    color: black;
+    width: 230px;
+    margin: 20px 10px 20px 20px;
+}
+
+.gallery-container a:hover{
+    opacity: 0.8;
+}
+
+.gallery-container a div{
+    width: 100%;
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-container a h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+.gallery-container a p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #111;
+}
+
+.gallery-upload{
+    color: white;
+    margin-top: 50px;
+    opacity: 0.9;
+    position: absolute;
+    left: 50%;
+    border-radius: 20px;
+    background: black;
+    padding:0px 100px 20px 100px;
+    transform: translate(-50%)
+}
+
+.gallery-upload-form{
+    align-content: center;
+}
+
+.folderimg{
+    width: 100px;
+    height: 100px;
+}
+
+.input-form{
+    width: 350px;
+    height: 25px;
+    margin: 7px;
+    border-radius: 10px;
+    text-align: center
+}
+
+.input-from-file{
+    margin-top: 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 290px;
+}
+
+.gallary-upload-form form button{
+    border-radius: 5px;
+}
+
+.gallary-upload-form form h2{
+    color: white;
+}
+
+.mainpage-picture{
+    float: left;
+    position: absolute;
+    left: 44%;
+    transform: translateX(-44%);
+}
+
+.mainpage-picture-sides{
+    transition: transform .5s ease;
+    height: 500px;
+    width: 325px;
+}
+.mainpage-picture-middle{
+    transition: transform .5s ease;
+    margin-top: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+.mainpage-picture-sides:hover{
+    transform: scale(1.2);
+}
+
+.mainpage-picture-middle:hover{
+    transform: scale(1.2);
 }
