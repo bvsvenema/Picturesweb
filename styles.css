@@ -329,22 +329,3 @@ body{
     transform: translateX(-44%);
 }
 
-.mainpage-picture-sides{
-    transition: transform .5s ease;
-    height: 500px;
-    width: 325px;
-}
-.mainpage-picture-middle{
-    transition: transform .5s ease;
-    margin-top: 100px;
-    height: 600px;
-    width: 400px;
-}
-
-.mainpage-picture-sides:hover{
-    transform: scale(1.2);
-}
-
-.mainpage-picture-middle:hover{
-    transform: scale(1.2);
-}
