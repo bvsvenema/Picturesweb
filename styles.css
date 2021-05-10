@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 /*login page */
 body{
-    background-image: url(img/background.jpg);
+    background-image: url(Img/background.jpg);
     max-width: 100%;
     height: auto;
     background-size: cover;
@@ -28,79 +28,27 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-.nav-header-main{
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color:black ;
-    border-radius: 20px;
+.article{
+    max-width: 50%;
+    margin-top: 20px;
+    margin-left: 20px ;
+    padding: 20px 40px 40px;
+    background-color: black;
+    /*border-radius: 20px;
+    bottom: 20px;*/
 }
 
-.header-login{
-    padding:30px 40px 25px 40px;
-    margin: 0 auto;
+.container{
 }
 
-@media(max-width: 480px){
-    body{
-        background-image: url(img/background-tel.jpg);
-        zoom: 150%;
-        -moz-transform: scale(1.5);
-    }
-}
-    
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-image: url(img/background-tel.jpg);
-        zoom: 150%;
-        -moz-transform: scale(1.5);
-    }
+.container p{
+
 }
 
-@media (min-width: 1025px) {
-    body {
-	    background-image: url(img/background.jpg);
-   }
+.container img{
+    width: 100px;
 }
 
-.button-inlogpage{
-    height: 30px;
-    width: 70px;
-}
-
-.input-inlogpage{
-    margin-bottom: 10px;
-    height: 30px;
-    width:200px ;
-}
-
-.p-inlogpage{
-    color: white;
-}
-
-.p-error{
-    background: #A94442;
-    color: white;
-    padding: 10px;
-    width: 90%;
-    border-radius: 5px;
-    margin:20px auto ;
-}
-
-.h1-signuppage{
-    color: white;
-}
-
-.button-signup{
-    height: 30px;
-    width: 70px;
-    margin-left: 150px;
-    transform: -20%;
-}
 /*mainpage*/
 .dropbtn {
     background-color: #3498DB;
@@ -159,52 +107,7 @@ body{
     background-color: tomato;
 }
 
-.ul-mainpage{
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
 
-.li-mainpage{
-    float: left;
-}
-
-.li-mainpage a {
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.li-mainpage a:hover{
-    background-color: #111;
-}
-
-.active{
-    background-color: red;
-}
-
-.button-menubar{
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    height: 46px;
-    width: 75px;
-    cursor: pointer;
-    background-color:black;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: medium;
-}
-
-.button-menubar:hover{
-    background-color: #111;
-}
 
 .copyright{
     margin-left: 10px;
@@ -231,7 +134,7 @@ body{
 
 .gallery-links{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #111;
 }
@@ -273,9 +176,59 @@ body{
 
 .gallery-container a p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 30px;
     font-weight: 200;
     color: #111;
+}
+
+
+.folder-container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.folder-container a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.folder-container a:visited a:link{
+    color: #ffffff;
+}
+
+.folder-container a div{
+    width: 100%;
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.folderimg{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.input-form{
+    width: 350px;
+    height: 25px;
+    margin: 7px;
+    border-radius: 10px;
+    text-align: center
+}
+
+.input-from-file{
+    margin-top: 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 290px;
 }
 
 .gallery-upload{
@@ -294,38 +247,141 @@ body{
     align-content: center;
 }
 
-.folderimg{
-    width: 100px;
-    height: 100px;
-}
-
-.input-form{
-    width: 350px;
-    height: 25px;
-    margin: 7px;
-    border-radius: 10px;
-    text-align: center
-}
-
-.input-from-file{
-    margin-top: 7px;
-    border-radius: 10px;
-    margin-left: 5px;
-    width: 290px;
-}
-
 .gallary-upload-form form button{
     border-radius: 5px;
+    font-size: 50px;
 }
 
 .gallary-upload-form form h2{
     color: white;
 }
 
-.mainpage-picture{
-    float: left;
+.folder-upload{
+    color: white;
+    margin-top: 40px;
+    opacity: 0.9;
     position: absolute;
-    left: 44%;
-    transform: translateX(-44%);
+    left: 50%;
+    border-radius: 20px;
+    background: black;
+    padding:40px 100px;
+    transform: translate(-50%);
 }
+
+.folder-upload-form{
+    align-content: center;
+}
+
+.folder-upload input{
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.folder-upload select {
+    height: 35px;
+    font-size: 20px;
+    border: 10px;
+}
+
+.folder-upload label{
+    font-size: 25px;
+}
+
+
+.album-add{
+    width: 400px;
+    height: 30px;
+}
+
+
+@media(max-width: 1024px) {
+    body{
+        background-image: url(Img/background-tel.jpg);
+    }
+    .article{
+        background-color: green;
+    }
+    .album-add{
+        font-size: 40px;
+        width: 500px;
+    }
+
+    .folder-upload input{
+        height: 50px;
+        font-size: 35px;
+    }
+    .folder-upload label{
+        font-size: 35px;
+    }
+    .folder-upload select {
+        font-size: 30px;
+        height: 50px;
+    }
+
+    .folderimg{
+        width: 200px;
+        height: 200px;
+    }
+
+    .gallery-links{
+        font-size: 30px;
+    }
+
+    .gallery-container a{
+        width: 290px;
+    }
+
+    .gallery-container a div{
+        width: 100%;
+        height: 295px;
+    }
+
+    .gallery-container a h3{
+        font-size: 30px;
+    }
+
+    .gallery-container a p{
+        font-size: 40px;
+    }
+
+    .input-form{
+        width: 450px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 40px;
+    }
+
+    .input-from-file{
+        margin-top: 7px;
+        border-radius: 10px;
+        margin-left: 5px;
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .gallary-upload-form form button{
+        border-radius: 5px;
+    }
+
+    .gallary-upload-form form h2{
+        color: white;
+    }
+
+    .button-form{
+        font-size: 30px;
+    }
+}
+
+
+@media(min-width: 1025px) {
+    body {
+        background-image: url(Img/background.jpg);
+    }
+    .article{
+        background-color: red;
+    }
+}
+
+
 

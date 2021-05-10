@@ -5,7 +5,7 @@
     <main>
 
         <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="inlogpage.css">
         </head>
 
         <div class="nav-header-main">
@@ -36,7 +36,7 @@
                     <div class="flex">
                     <button class="button-inlogpage" type="submit" name="signup-submit">Signup</button>
                 </form>
-                <form action="mainpage.php" method="post">
+                <form action="mainpage-main.php" method="post">
                     <button class="button-inlogpage" type="submit" name="index-submit">Back</button>
                 </form>
                 </div>

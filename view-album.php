@@ -18,6 +18,7 @@ include 'mainpage.php';
         <meta charset="utf-8">
         <meta name="Description" content="this is example of a meta discription. this will often show up in search result">
         <meta name="Viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=yes">
         <title>Picture website</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
@@ -37,13 +38,13 @@ include 'mainpage.php';
                 <form action="includes/logout.inc.php">
                 <button class="button-menubar" type="submit" name="logout-submit">Logout</button>
                 </form>
-                <?php/*
+                /*
                    if(isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){
                         echo '<form action="includes/signup.php">
                     <button class="button-menubar" type="submit" name="signup-submit">Signup</button>
                 </form>';
                    }
-                */?>
+                */
                 </ul>
             </div>
         </nav>   
@@ -77,7 +78,7 @@ include 'mainpage.php';
 
             
                     ?>
-                 </div>   
+                 </div>
             <?php if(isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){ ?>
                 <div class="gallery-upload">
                     <div class="gallery-upload-form">
@@ -88,8 +89,7 @@ include 'mainpage.php';
                             <input class="input-form" type="text" name="filetitle" placeholder="Image title..."> <br>
                             <input class="input-form" type="text" name="filedesc" placeholder="Image description..."> <br>
                             <input class="input-from-file" type="file" name="file">
-                            <button type="submit" name="submit">Upload</button>
-                        </div>
+                            <button class="button-form" type="submit" name="submit">Upload</button>
                         </form>
                     </div> 
                 </div>

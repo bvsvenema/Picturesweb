@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
 
                             move_uploaded_file($fileTempName, $fileDestination);
 
-                            header("Location: ../view-album.php");
+                            header("Location: ../album-mainpage.php");
                         }
                     }
                 }

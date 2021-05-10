@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*login page */
+body{
+    background-image: url(Img/background.jpg);
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-header-main{
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:black ;
+    border-radius: 20px;
+}
+
+.header-login{
+    padding:30px 40px 25px 40px;
+    margin: 0 auto;
+}
+
+.button-inlogpage{
+    height: 30px;
+    width: 70px;
+}
+
+.input-inlogpage{
+    margin-bottom: 10px;
+    height: 30px;
+    width:200px ;
+}
+
+.p-inlogpage{
+    color: white;
+}
+
+.p-error{
+    background: #A94442;
+    color: white;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin:20px auto ;
+}
+
+.h1-signuppage{
+    color: white;
+}
+
+.button-signup{
+    height: 30px;
+    width: 70px;
+    margin-left: 150px;
+    transform: -20%;
+}
+
+@media(max-width: 1024px){
+    body{
+        background-image: url(Img/background-tel.jpg);
+    }
+    .article {
+        background-color: green;
+    }
+    .header-login{
+        padding:100px 110px 95px 110px;
+        margin: 0 auto;
+    }
+
+    .button-inlogpage{
+        height: 100px;
+        width: 120px;
+        font-size: 40px;
+    }
+
+    .input-inlogpage{
+        margin-bottom: 10px;
+        height: 80px;
+        font-size: 40px;
+        width:500px ;
+    }
+
+    .p-inlogpage{
+        color: white;
+        font-size: 40px;
+    }
+
+    .p-error{
+        font-size: 50px;
+        height: 60px;
+    }
+
+    .nav-header-main{
+        border-radius: 50px;
+    }
+}
+
+@media(min-width: 1025px) {
+    body {
+        background-image: url(Img/background.jpg);
+    }
+    .article{
+        background-color: red;
+    }
+}
